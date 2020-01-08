@@ -23,12 +23,12 @@ Change base_path into your global path directory
 ### AccuWeather.ipynb
 This script is responsible for trigerring a task scheduler on different time intervals of each day for 
 each city defined in "cities_locations.xlsx" and exporting data from AccuWeather such as the following information:
-     - Temperature
-     - Precipitation
-     - Wind Speed
-     - Solar Radiation
-     - Humidity
-     - Cover Percentage
+- Temperature
+- Precipitation
+- Wind Speed
+- Solar Radiation
+- Humidity
+- Cover Percentage
 
 ### Aggregate_EEflux_RefET.ipynb
 This script is responsible for computing the reference evapotranspiration ETo for all the sites from AmeriFlux
