@@ -12,6 +12,17 @@ pip install logging
 pip install utc
 pip install refet
 pip install pvlib
+pip install rasterio
+pip install earthpy
+pip install pyproj
+pip install Pool
+pip install requests_respectful
+pip install ratelimit
+pip install backoff
+pip install tenacity
+pip install gcsfs
+pip install wget
+pip install clint
 ```
 
 ## Global Parameters
@@ -45,3 +56,11 @@ and resampling the half-hourly to daily and then retrieving the data from EEflux
 - lags_count: The number of lags to generate the data for, currently it it set to 5
 - output_name: The path of the output file where the generated data should reside
 
+### EEflux_Scrap.ipynb
+This script is responsible for scraping data from EEflux by specifying the following input and output fields:
+
+- BUCKET_NAME: The name of the bucket in google cloud that is used to store the rasters retrieved ex: agriculture-bucket-wgr
+- site_id_path: The folder name of the site id to scrap data for
+- site_id: The name of the site id to scrap data for 
+- type_id: The type oe metric to be exported from the raster (i.e 1 for ET, 2 for ETr, 3 for ETo, 4 for LST)
+- from_to: The date range to retrieve the data for. i.e: "2004-01-01 to 2011-12-31"
