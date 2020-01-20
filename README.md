@@ -64,3 +64,12 @@ This script is responsible for scraping data from EEflux by specifying the follo
 - site_id: The name of the site id to scrap data for 
 - type_id: The type oe metric to be exported from the raster (i.e 1 for ET, 2 for ETr, 3 for ETo, 4 for LST)
 - from_to: The date range to retrieve the data for. i.e: "2004-01-01 to 2011-12-31"
+
+### EuroFlux_Cleaning.ipynb
+This script is responsible for concatenating data from EuroFlux keeping each Level alone (Level 2, 3, & 4) and adding a year and a site_id column which are retrieved from the file's name
+
+- input_path: The input path folder to read the zip files from
+
+### Ameriflux_Cleaning-Correction.ipynb
+This script is responsible for computing the correction on Ameriflux Daily data using Bowen's ratio and generating data similar to what is in Ameriflux_Cleaning script which uses the same input/out parameters. Graphs are also exported to show
+the difference between LE before and after correction between Ameriflux and EEflux
